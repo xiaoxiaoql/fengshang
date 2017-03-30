@@ -1,0 +1,26 @@
+{
+  "name": "fengshang",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaoxiaoql/fengshang.git"
+  },
+  "author": "xql",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaoxiaoql/fengshang/issues"
+  },
+  "homepage": "https://github.com/xiaoxiaoql/fengshang#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

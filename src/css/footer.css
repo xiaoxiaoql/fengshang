@@ -1,0 +1,69 @@
+@charset "UTF-8";
+#footer .footerf {
+  width: 100%;
+  background: #efefef;
+}
+
+#footer .footerf .foot-top {
+  height: 122px;
+  display: flex;
+}
+
+#footer .footerf .foot-top .first {
+  padding-left: 170px;
+}
+
+#footer .footerf .foot-top .first span {
+  left: 60px;
+}
+
+#footer .footerf .foot-top li {
+  position: relative;
+  padding-left: 120px;
+  width: 33.333%;
+  margin-top: 25px;
+}
+
+#footer .footerf .foot-top li span {
+  display: inline-block;
+  width: 66px;
+  height: 66px;
+  background: url(../img/index_icon.png) no-repeat -98px 0px;
+  position: absolute;
+  top: 0px;
+  left: 40px;
+}
+
+#footer .footers .foot-center {
+  margin-top: 24px;
+}
+
+#footer .footers .foot-center .about {
+  float: left;
+  width: 420px;
+  height: 140px;
+}
+
+#footer .footers .foot-center .about p {
+  width: 100px;
+}
+
+#footer .footers .foot-center ul {
+  float: left;
+  width: 118px;
+}
+
+#footer .footers .foot-center ul li {
+  line-height: 22px;
+}
+
+#footer .footers .foot-center ul li h5 {
+  font-family: "黑体";
+  line-height: 30px;
+  font-size: 16px;
+}
+
+#footer .footers .icp {
+  text-align: center;
+  margin-top: 30px;
+}

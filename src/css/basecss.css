@@ -1,0 +1,19 @@
+p,ul,h1,h2,h3,h4,h5,h6{
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+	color:#6c6c6c;
+}
+ul , li{list-style: none;}
+.wrap{max-width: 1200px;margin: 0 auto;}
+
+.clear::before,
+.clear::after{
+    display:block;
+    clear:both;
+    content: "";
+    height: 0;
+    visibility: hidden;
+}
