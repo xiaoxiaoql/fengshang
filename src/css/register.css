@@ -9,3 +9,84 @@
 .header #header-top .public-top .adress {
   display: none;
 }
+
+main {
+  padding: 40px 0 40px 0;
+}
+
+main .regist {
+  margin: 0 auto;
+  border: 1px solid #666;
+  width: 982px;
+}
+
+main .regist .title {
+  background: #e6e6e6;
+  height: 37px;
+  border-bottom: 1px solid #666;
+  line-height: 37px;
+}
+
+main .regist .title h2 {
+  float: left;
+  padding-left: 20px;
+}
+
+main .regist .title .title-lg {
+  float: right;
+  font-size: 14px;
+}
+
+main .regist .title .title-lg a {
+  display: inline-block;
+  line-height: 14px;
+  padding: 5px;
+  color: #fff;
+  margin: 8px;
+  background: #fc4c65;
+}
+
+main .regist .contain {
+  padding: 40px 40px 60px;
+}
+
+main .regist .contain a img {
+  vertical-align: bottom;
+}
+
+main .regist .contain .form-reg {
+  border-top: 1px solid #666;
+}
+
+main .regist .contain .form-reg table {
+  text-align: right;
+  margin-left: 160px;
+  margin-top: 20px;
+}
+
+main .regist .contain .form-reg table td {
+  height: 50px;
+}
+
+main .regist .contain .form-reg table td input {
+  width: 200px;
+  height: 24px;
+}
+
+main .regist .contain .form-reg table td input.code {
+  widtd: 80px;
+}
+
+main .regist .contain .form-reg table td .tips {
+  display: none;
+  color: #fc4c65;
+}
+
+main .regist .contain .form-reg table td .regsbtn {
+  width: 127px;
+  height: 27px;
+  background: #fc4c65;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+}

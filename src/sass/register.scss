@@ -13,3 +13,71 @@
 	 }
 	}
 }
+main{
+	padding:40px 0 40px 0;
+	.regist{
+		margin:0 auto;
+		border:1px solid #666;
+		width:982px;
+		.title{
+			background:#e6e6e6;
+			height:37px;
+			border-bottom:1px solid #666;
+			line-height:37px;
+			h2{
+				float:left;
+				padding-left:20px;
+			}
+			.title-lg{
+				float:right;
+				font-size:14px;
+				a{
+					display:inline-block;
+					line-height:14px;
+					padding: 5px;
+					color:#fff;
+					margin:8px;
+					background:#fc4c65;
+				}
+			}
+
+		}
+		.contain{
+			padding:40px 40px 60px;;
+
+			a{
+				img{vertical-align:bottom;}
+			}
+			.form-reg{
+				border-top:1px solid #666;
+				table{
+					text-align:right;
+					margin-left:160px;
+					margin-top:20px;
+					td{
+						height:50px;
+						input{
+							width:200px;
+							height:24px;
+							&.code{
+								widtd:80px;
+							}
+						}
+						.tips{
+							display:none;
+							color:#fc4c65;
+						}
+						.regsbtn{
+							width:127px;
+							height:27px;
+							background:#fc4c65;
+							border:none;
+							color:#fff;
+							font-size:14px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
