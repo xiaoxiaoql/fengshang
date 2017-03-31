@@ -3,8 +3,71 @@
 <head>
 	<meta charset="UTF-8">
 	<title>登录</title>
+	<link href="../img/logo.ico" rel="shortcut icon"/>
+	<link rel="stylesheet" href="../css/basecss.css">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="../css/login.css">
+	<script src='../js/require.js' data-main='../js/config.js'></script>
+	<script>
+		requirejs(['login'],function(login){
+				login();
+			});
+	</script>
 </head>
 <body>
+	<div class="header">
+		<div id="header-top"></div>
+		<div id="header-center"></div>
+	</div>
+	<main>
+		<div class="warp">
+			<div class="form">
+				<div class="title"><h4>用户登录</h4></div>
+				<div class="contain clear">
+					<div class="lg">
+						<table>
+							<tr>
+								<td> <label for="tel">手机号:</label> </td>
+								<td>
+									<input type="text" id="tel" name="tel">
+									<p>请输入您的手机号</p>
+								</td>
+							</tr>
+							<tr>
+								<td><label for="pasw">密码/短信验证码:</label></td>
+								<td>
+									<input type="pasword" id="pasw" name="pasw">
+									<p>请输入密码</p>
+
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<input type="checkbox">记住用户名
+									<button>获取短信验证码</button>
+
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><button type="submit" id="lgbtn">登录</button></td>
+							</tr>
+						</table>
+					</div>
+					<div class="reg">
+						<h5>您还不是风尚购物用户？</h5>
+						<p>现在免费注册成为风尚购物会员，便能立刻享受便宜又放心的购物体验。</p>
+						<button><a href="#">注册新用户</a></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<div id="footer">
+
+	</div>
 	
 </body>
 </html>

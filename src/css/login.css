@@ -1,0 +1,117 @@
+.header #header-top .public-top {
+  font-size: 14px;
+}
+
+.header #header-top .public-top span:first-child {
+  display: none;
+}
+
+.header #header-top .public-top .adress {
+  display: none;
+}
+
+main {
+  padding: 40px 0;
+}
+
+main .form {
+  border: 1px solid  #666;
+  height: 300px;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+main .form .title {
+  height: 40px;
+  background: #e6e6e6;
+  line-height: 40px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+main .form .contain {
+  box-sizing: border-box;
+  padding: 15px 20px;
+}
+
+main .form .contain .lg {
+  float: left;
+  width: 540px;
+  height: 230px;
+}
+
+main .form .contain .lg table td {
+  height: 52px;
+  text-align: right;
+  vertical-align: top;
+}
+
+main .form .contain .lg table td #tel {
+  width: 246px;
+  height: 22px;
+}
+
+main .form .contain .lg table td #tel + p {
+  color: #fc4c65;
+  text-algin: center;
+  line-height: 30px;
+  display: none;
+}
+
+main .form .contain .lg table td #pasw {
+  width: 246px;
+  height: 22px;
+}
+
+main .form .contain .lg table td #pasw + p {
+  color: #fc4c65;
+  text-algin: center;
+  line-height: 30px;
+  display: none;
+}
+
+main .form .contain .lg table td #lgbtn {
+  width: 85px;
+  height: 32px;
+  background: #fc4c65;
+}
+
+main .form .contain .lg table td button {
+  padding: 0px;
+  border: 0px;
+  margin-top: 30px;
+}
+
+main .form .contain .reg {
+  width: 280px;
+  height: 230px;
+  float: left;
+  border-left: 1px dashed #E7E7E7;
+  padding-left: 60px;
+}
+
+main .form .contain .reg h5 {
+  line-height: 60px;
+  font-size: 14px;
+}
+
+main .form .contain .reg p {
+  line-height: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+main .form .contain .reg button {
+  padding: 0px;
+  border: 0px;
+  margin-top: 30px;
+}
+
+main .form .contain .reg button a {
+  width: 137px;
+  height: 31px;
+  background: #fc4c65;
+  display: block;
+  line-height: 31px;
+  text-algin: center;
+}

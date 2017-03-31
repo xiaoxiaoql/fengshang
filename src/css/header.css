@@ -3,6 +3,10 @@ html {
   font-size: 12px;
 }
 
+html a:hover {
+  color: #fc4c65;
+}
+
 html body {
   font-family: '微软雅黑';
   margin: 0px;
@@ -48,6 +52,11 @@ html body .header header .public-nav li {
 
 html body .header header .public-nav li a {
   padding: 5px 10px;
+}
+
+html body .header header .public-nav li a:hover {
+  background: #fc4c65;
+  color: #fff;
 }
 
 html body .header header .public-nav .tel {

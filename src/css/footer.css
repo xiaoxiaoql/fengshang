@@ -1,4 +1,9 @@
 @charset "UTF-8";
+#footer {
+  font-family: "黑体";
+  font-size: 12px;
+}
+
 #footer .footerf {
   width: 100%;
   background: #efefef;
@@ -34,6 +39,17 @@
   left: 40px;
 }
 
+#footer .footerf .foot-top li h3 a {
+  color: #595757;
+  line-height: 30px;
+  font-size: 17px;
+}
+
+#footer .footerf .foot-top li p {
+  line-height: 20px;
+  color: #595757;
+}
+
 #footer .footers .foot-center {
   margin-top: 24px;
 }
@@ -41,11 +57,30 @@
 #footer .footers .foot-center .about {
   float: left;
   width: 420px;
-  height: 140px;
+  height: 179px;
+  margin-right: 30px;
 }
 
-#footer .footers .foot-center .about p {
-  width: 100px;
+#footer .footers .foot-center .about > a {
+  display: inline-block;
+  width: 102px;
+  height: 179px;
+  background: url(../img/FSBreif.jpg);
+}
+
+#footer .footers .foot-center .about .box {
+  float: right;
+  padding-right: 18px;
+}
+
+#footer .footers .foot-center .about .box h4 {
+  line-height: 40px;
+}
+
+#footer .footers .foot-center .about .box p {
+  width: 294px;
+  line-height: 20px;
+  color: #595757;
 }
 
 #footer .footers .foot-center ul {
@@ -65,5 +100,13 @@
 
 #footer .footers .icp {
   text-align: center;
-  margin-top: 30px;
+  padding: 30px 0;
+}
+
+#footer .footers .foot {
+  text-align: center;
+}
+
+#footer .footers .foot img {
+  margin-right: 40px;
 }

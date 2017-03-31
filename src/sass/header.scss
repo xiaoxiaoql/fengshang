@@ -1,5 +1,8 @@
 
 html{
+	a:hover{
+		color:#fc4c65;;
+	}
 	font-size:12px;
 	body{
 		font-family:'微软雅黑';
@@ -29,6 +32,10 @@ html{
 						float:left;
 						a{
 							padding:5px 10px;
+							&:hover{
+								background:#fc4c65;
+								color:#fff;
+							}
 						}
 					}
 					.tel{

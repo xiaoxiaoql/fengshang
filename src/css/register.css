@@ -1,0 +1,11 @@
+.header #header-top .public-top {
+  font-size: 14px;
+}
+
+.header #header-top .public-top span:first-child {
+  display: none;
+}
+
+.header #header-top .public-top .adress {
+  display: none;
+}

@@ -1,11 +1,8 @@
 requirejs.config({
-	baseUrl:'js',
+	baseUrl:'../js',
 	paths:{
 		'jquery':'jquery-3.1.1'
 	}
 	
 
 });
-requirejs([],function(){
-	
-	})

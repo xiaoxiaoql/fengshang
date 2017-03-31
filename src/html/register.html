@@ -3,8 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>注册</title>
+	<link href="../img/logo.ico" rel="shortcut icon"/>
+	<link rel="stylesheet" href="../css/basecss.css">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href='../css/register.css'>
+	<script src='../js/require.js' data-main='../js/config.js'></script>
+	<script>
+		requirejs(['register'],function(register){
+			register();
+		})
+	</script>
 </head>
 <body>
+	<div class="header">
+			<div id="header-top"></div>
+			<div id="header-center"></div>
+	</div>
+	<main></main>
+	<div id="footer"></div>
 	
 </body>
 </html>

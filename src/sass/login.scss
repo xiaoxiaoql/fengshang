@@ -1,0 +1,112 @@
+.header{
+	#header-top{
+
+	 .public-top{
+	 	font-size:14px;
+	 	span:first-child{
+	 		display:none;
+	 	}
+	 	.adress{
+	 		display:none;
+	 	}
+
+	 }
+	}
+}
+
+main{
+	padding:40px 0;
+	.form{
+		border:1px solid  #666;
+		height:300px;
+		margin :0 auto;
+		width:1000px;
+		.title{
+			height:40px;
+			background:#e6e6e6;
+			line-height:40px;
+			padding-left:10px;
+			font-size:16px;
+		}
+		.contain{
+			box-sizing:border-box;
+			padding:15px 20px;
+			.lg{
+				float:left;
+				width:540px;
+				height:230px;
+			 table{
+			 	td{
+			 		height:52px;
+			 		text-align:right;
+			 		vertical-align: top;
+			 		#tel{
+			 			width:246px;
+			 			height:22px;
+
+			 		}
+			 		#tel+p{
+			 			color:#fc4c65;
+			 			text-algin:center;
+			 			line-height:30px;
+			 			display:none;
+			 		}
+			 		#pasw{
+			 			width:246px;
+			 			height:22px;
+			 		}
+			 		#pasw+p{
+			 			color:#fc4c65;
+			 			text-algin:center;
+			 			line-height:30px;
+			 			display:none;
+			 		}
+			 		#lgbtn{
+			 			width:85px;
+			 			height:32px;
+			 			background:#fc4c65;
+			 		}
+			 		button{
+			 		padding:0px;
+					border:0px;
+					margin-top:30px;
+			 		}
+
+			 	}
+
+			 }
+			}
+			.reg{
+				width:280px;
+				height:230px;
+				float:left;
+				border-left: 1px dashed #E7E7E7;
+				padding-left:60px;
+				h5{
+					line-height:60px;
+					font-size:14px;
+				}
+				p{
+					line-height:20px;
+					font-size:14px;
+					color:#666
+				}
+				button{
+					padding:0px;
+					border:0px;
+					margin-top:30px;
+					a{
+						width:137px;
+						height:31px;
+						background:#fc4c65;
+						display:block;
+						line-height:31px;
+						text-algin:center;
+					}
+				}
+
+
+			}
+		}
+	}
+}

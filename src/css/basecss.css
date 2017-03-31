@@ -17,3 +17,11 @@ ul , li{list-style: none;}
     height: 0;
     visibility: hidden;
 }
+input,button{
+	/*border: none;*/
+    /*获取焦点时的外边框*/
+    outline: none;
+    /*清除移动端默认的表单样式:-webkit-appearance是用来改变按钮和其他控件的外观，使其外观类似于原生控件.
+    通常我们可以在相应的元素上加上-webkit-appearance: none;来移除原生控件样式。*/
+    /*-webkit-appearance: none;*/
+}
