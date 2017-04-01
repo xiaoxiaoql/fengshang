@@ -33,7 +33,7 @@
   display: inline-block;
   width: 66px;
   height: 66px;
-  background: url(../img/index_icon.png) no-repeat -98px 0px;
+  background: url(../img/index_icon.png) no-repeat -98px -130px;
   position: absolute;
   top: 0px;
   left: 40px;
@@ -48,6 +48,14 @@
 #footer .footerf .foot-top li p {
   line-height: 20px;
   color: #595757;
+}
+
+#footer .footerf .foot-top li:first-child span {
+  background-position: -98px -65px;
+}
+
+#footer .footerf .foot-top li:last-child span {
+  background-position: -98px -195px;
 }
 
 #footer .footers .foot-center {
@@ -109,4 +117,10 @@
 
 #footer .footers .foot img {
   margin-right: 40px;
+}
+
+#footer .copy {
+  height: 30px;
+  width: 100%;
+  background: #f12e24;
 }

@@ -37,6 +37,8 @@ define(['jquery'],function($){
 				});
 			//提交验证用户名和密码
 			$('#lgbtn').on('click',function(e){
+				username=$('#tel').val();
+				pasw=$('#pasw').val();
 				e.stopPropagation();
 				//发送请求，查看用户名和密码是否正确
 				if(username.trim()!=''&&username.trim()!=''){
@@ -46,16 +48,12 @@ define(['jquery'],function($){
 						// dataType:'json',
 						type:'post',
 						success:function(res){
-							console.log(res);
-							// for(var i=0;i<res.length;i++){
-							// 	if(res[i].username==username&&res[i].password==pasw){
-							// 		alert('密码正确');
-
-							// 	}
-							// 	else{
-							// 		alert('密码不存在');
-							// 	}
-							// }
+							console.log(res=='ok');
+							if(res=='ok'){
+								setTimeout(function(){
+									location.href='index.html'
+								},100);
+							}
 						}
 
 					});

@@ -28,11 +28,8 @@
 	//使用查询结果集
 	$row = $result->fetch_all(MYSQLI_ASSOC);
 	for($i=0;$i<count($row);$i++){
-		if($row[$i]['password']===$name && $row[$i]['username']===$pasw){
-			echo json_encode('ok');
-
-		}else{
-			echo json_encode('no');
+		if($row[$i]['password']==$pasw && $row[$i]['username']==$name){
+			echo 'ok';
 		}
 	};
 

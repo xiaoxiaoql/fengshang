@@ -78,7 +78,6 @@ main .regist .contain .form-reg table td input.code {
 }
 
 main .regist .contain .form-reg table td .tips {
-  display: none;
   color: #fc4c65;
 }
 
