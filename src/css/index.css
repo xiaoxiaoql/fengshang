@@ -88,7 +88,8 @@
 }
 
 main {
-  height: 600px;
+  background: #fafafa;
+  padding-bottom: 19px;
 }
 
 main .adver {
@@ -98,4 +99,108 @@ main .adver {
 main .adver img {
   float: left;
   margin-right: 1px;
+}
+
+main .hot .hot-title {
+  height: 58px;
+}
+
+main .hot .hot-title h2 {
+  height: 58px;
+  line-height: 58px;
+  color: #fc4c65;
+  font-size: 26px;
+  float: left;
+}
+
+main .hot .hot-title span {
+  font-size: 16px;
+  color: #666;
+  margin-left: 8px;
+  display: inline-block;
+  padding-top: 23px;
+}
+
+main .hot .hot-contain {
+  height: 665px;
+}
+
+main .hot .hot-contain .hot-banner {
+  float: left;
+  width: 400px;
+  height: 665px;
+  overflow: hidden;
+  background: #fff;
+}
+
+main .hot .hot-contain .hot-banner ul li {
+  width: 400px;
+  height: 665px;
+  border-top: 1px solid #ccc;
+  padding: 10px 20px 0;
+  box-sizing: border-box;
+}
+
+main .hot .hot-contain .hot-banner ul li a img {
+  width: 360px;
+  height: 360px;
+}
+
+main .hot .hot-contain .hot-banner ul li .name {
+  margin-top: 60px;
+}
+
+main .hot .hot-contain .hot-banner ul li .name a {
+  line-height: 20px;
+  display: inline- block;
+}
+
+main .hot .hot-contain .hot-banner ul li h6 {
+  line-height: 30px;
+  margin-top: 26px;
+}
+
+main .hot .hot-contain .hot-banner ul li p {
+  color: #333;
+}
+
+main .hot .hot-contain .hot-banner ul li .price {
+  color: #d91404;
+  font-weight: 700;
+}
+
+main .hot .hot-contain .hot-list {
+  float: right;
+  width: 800px;
+  padding-left: 26px;
+  box-sizing: border-box;
+}
+
+main .hot .hot-contain .hot-list ul li {
+  float: left;
+  margin: 0 0 20px 22px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 7px 7px 19px;
+}
+
+main .hot .hot-contain .hot-list ul li:hover {
+  box-shadow: 0px 0px 10px 2px #ccc;
+}
+
+main .hot .hot-contain .hot-list ul li img {
+  width: 220px;
+  height: 220px;
+}
+
+main .hot .hot-contain .hot-list ul li p {
+  margin-top: 10px;
+  height: 40px;
+  line-height: 20px;
+}
+
+main .hot .hot-contain .hot-list ul li .price {
+  color: #d91404;
+  font-weight: 700;
+  font-size: 16px;
 }
