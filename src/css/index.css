@@ -204,3 +204,73 @@ main .hot .hot-contain .hot-list ul li .price {
   font-weight: 700;
   font-size: 16px;
 }
+
+main .tab {
+  padding-top: 30px;
+  position: relative;
+}
+
+main .tab .tab-title {
+  height: 36px;
+  linw-height: 36px;
+  border-bottom: 1px solid #d91404;
+}
+
+main .tab .tab-title span {
+  float: right;
+  display: inline-block;
+  height: 36px;
+}
+
+main .tab .tab-title span a {
+  display: inline-block;
+  padding: 0 15px;
+  height: 36px;
+  line-height: 36px;
+}
+
+main .tab .tab-title span.active {
+  border: 1px solid #d91404;
+  z-index: 999;
+  border-bottom: none;
+}
+
+main .tab h2 {
+  height: 36px;
+  line-height: 36px;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  font-size: 26px;
+  z-index: 999;
+}
+
+main .tab .content {
+  width: 100%;
+  height: 789px;
+  margin-top: 24px;
+  padding: 10px 0;
+}
+
+main .tab .content .module {
+  width: 100%;
+  position: absolute;
+  height: 789px;
+}
+
+main .tab .content .module ul li {
+  float: left;
+  height: 383px;
+  background: #fff;
+  margin-right: 23px;
+  margin-bottom: 23px;
+  width: 280px;
+}
+
+main .tab .content .module ul li:first-child {
+  width: 588px;
+}
+
+main .tab .content .module ul .last {
+  margin-right: 0px;
+}

@@ -1,7 +1,12 @@
-define(['jquery'],function($){
+define(['jquery','xqltab'],function($){
 	return function(){
 		$('#header-top').load('header.html');
 		$('#footer').load('footer.html');
+
+		$('.tab').xqltab();
+
+		//tab切换
+		// $('.tab').xqltab({title:['家居用品','卧室用品','厨浴用品']});
 
 		//克隆第一张实现无缝轮播
 		$('.banner').find('li').eq(0).clone().appendTo($('.banner').children('ul'));
@@ -39,6 +44,7 @@ define(['jquery'],function($){
 			},3000);
 		}).trigger('mouseleave');
 
+
 		//默认第一张添加高亮
 		$('.page').children('span').eq(idx).addClass('active');
 		function show(){
@@ -59,5 +65,9 @@ define(['jquery'],function($){
 			//添加动画
 			$('.banner').children('ul').animate({left:-idx*width},500);
 		}	
+
+		
+
+
 	}
 })

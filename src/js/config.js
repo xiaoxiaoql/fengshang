@@ -1,17 +1,15 @@
 requirejs.config({
 	baseUrl:'../js',
 	paths:{
-		'jquery':'jquery-3.1.1'
-	},
-	paths:{
 		'jquery':'jquery-3.1.1',
-		'xqltab':'jqurey.xqltab.js'
+		'xqltab':'jqurey.xqltab'
+
 	},
 	shim:{
-		'ajax':{
-			exports:'ajax'
-		},
-		'xqltab':['jquery']
+		// 'ajax':{
+		// 	exports:'ajax'
+		// },
+		 'xqltab': ["jquery"]
 	}
 	
 
