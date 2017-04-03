@@ -1,0 +1,54 @@
+main{
+	padding-bottom:80px;
+	.main-top{
+		height:32px;
+		.lf{
+			float:left;
+			height:32px;
+			line-height:32px;
+			margin-top:3px;
+			.adress{
+				display:inline-block;
+				border:1px solid #ccc;
+				height:28px;
+				line-height:28px;
+				padding:0 10px;
+			}
+		}
+		.rt{
+    		float:right;
+		}
+	}
+	.main-center{
+		padding-top:40px ;
+		.list{
+			.goodscart{
+				width:100%;
+				thead{
+					th{
+						background:#DFDFDF;
+					}
+				}
+			}
+			.cartTotal{
+				li{
+					border-bottom:1px dotted #BBB;
+					height:40px;
+					line-height:40px;
+					text-align: right;
+					&:last-child{
+						border-bottom:0px;
+						padding:20px 0px;
+						img{
+							margin-left:10px;
+						}
+
+					}
+				}
+			}
+			p{
+				margin-top:10px;
+			}
+		}
+	}
+}

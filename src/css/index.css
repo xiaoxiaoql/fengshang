@@ -1,3 +1,142 @@
+.header {
+  position: relative;
+}
+
+.header #header-center {
+  position: absolute;
+  top: 38px;
+  right: 100px;
+  height: 80px;
+  padding-top: 45px;
+}
+
+.header #header-center .con-search {
+  float: left;
+}
+
+.header #header-center .con-search .search {
+  border: 3px solid #fc4c65;
+  border-radius: 5px;
+  background: #fc4c65;
+}
+
+.header #header-center .con-search .search input {
+  width: 470px;
+  height: 34px;
+  padding-left: 4px;
+  border: none;
+}
+
+.header #header-center .con-search .search .searchbtn {
+  display: inline-block;
+  color: #fff;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 30px;
+  font-size: 18px;
+}
+
+.header #header-center .con-search nav li {
+  float: left;
+}
+
+.header #header-center .con-search nav li a {
+  margin-right: 8px;
+  line-height: 24px;
+}
+
+.header #header-center .shopcar {
+  border: 1px solid #d8d8d8;
+  float: left;
+  height: 38px;
+  margin-left: 24px;
+}
+
+.header #header-center .shopcar a {
+  display: inline-block;
+  height: 38px;
+  padding: 0 36px 0 25px;
+  line-height: 38px;
+  font-size: 14px;
+  background: url(../img/shoppingCart.png) no-repeat 3px 11px;
+}
+
+.header #header-center .shopcar a i {
+  margin-left: 5px;
+}
+
+.header .index-nav {
+  margin-top: 30px;
+  height: 38px;
+}
+
+.header .index-nav li {
+  float: left;
+  padding: 0px 24px;
+  margin: 0 14px;
+  line-height: 38px;
+}
+
+.header .index-nav li:first-child {
+  position: relative;
+}
+
+.header .index-nav li:first-child a {
+  width: 221px;
+  height: 38px;
+  display: inline-block;
+  text-align: center;
+  line-height: 38px;
+  font-size: 16px;
+  color: #fff;
+  background: #fc4c65;
+}
+
+.header .index-nav li:first-child ul {
+  position: absolute;
+  z-index: 999;
+  background: #fc4c65;
+  width: 221px;
+  padding-bottom: 15px;
+  display: none;
+}
+
+.header .index-nav li:first-child ul li {
+  padding: 0px;
+  margin: 0px;
+}
+
+.header .index-nav li:first-child ul li a {
+  height: 52px;
+  display: inline-block;
+  line-height: 52px;
+  background: url(../img/index_icon2.png) no-repeat 22px 1px;
+}
+
+.header .index-nav li:first-child ul li:nth-child(2) a {
+  background-position: 22px -48px;
+}
+
+.header .index-nav li:first-child ul li:nth-child(3) a {
+  background-position: 22px -98px;
+}
+
+.header .index-nav li:first-child ul li:nth-child(4) a {
+  background-position: 22px -148px;
+}
+
+.header .index-nav li:first-child ul li:nth-child(5) a {
+  background-position: 22px -198px;
+}
+
+.header .index-nav li:first-child ul li:nth-child(6) a {
+  background-position: 22px -248px;
+}
+
+.header .index-nav li:first-child ul li:nth-child(7) a {
+  background-position: 22px -298px;
+}
+
 .banner {
   width: 100%;
   height: 398px;
@@ -267,8 +406,40 @@ main .tab .content .module ul li {
   width: 280px;
 }
 
+main .tab .content .module ul li img {
+  width: 280px;
+  height: 280px;
+}
+
+main .tab .content .module ul li:hover {
+  box-shadow: 0px 0px 10px 2px #ccc;
+}
+
+main .tab .content .module ul li .name {
+  height: 40px;
+  line-height: 20px;
+  padding: 10px 10px 0 10px;
+}
+
+main .tab .content .module ul li .price {
+  display: block;
+  line-height: 20px;
+  color: #d91404;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
 main .tab .content .module ul li:first-child {
   width: 588px;
+}
+
+main .tab .content .module ul li:first-child img {
+  width: 588px;
+  height: 383px;
+}
+
+main .tab .content .module ul li:first-child:hover {
+  box-shadow: 0px 0px 0px 0px #fff;
 }
 
 main .tab .content .module ul .last {

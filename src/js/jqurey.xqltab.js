@@ -22,7 +22,7 @@
 			$(this).children('.content').children().not(':first').hide();
 
 
-			$(this).on('mouseenter','span',function(){
+			$(this).children('.tab-title').on('mouseenter','span',function(){
 				// 事件委托
 					// 这里的this表示事件源对象
 					$(this).addClass('active').siblings().removeClass('active');

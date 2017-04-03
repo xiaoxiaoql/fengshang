@@ -1,0 +1,58 @@
+main {
+  padding-bottom: 80px;
+}
+
+main .main-top {
+  height: 32px;
+}
+
+main .main-top .lf {
+  float: left;
+  height: 32px;
+  line-height: 32px;
+  margin-top: 3px;
+}
+
+main .main-top .lf .adress {
+  display: inline-block;
+  border: 1px solid #ccc;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 10px;
+}
+
+main .main-top .rt {
+  float: right;
+}
+
+main .main-center {
+  padding-top: 40px;
+}
+
+main .main-center .list .goodscart {
+  width: 100%;
+}
+
+main .main-center .list .goodscart thead th {
+  background: #DFDFDF;
+}
+
+main .main-center .list .cartTotal li {
+  border-bottom: 1px dotted #BBB;
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+}
+
+main .main-center .list .cartTotal li:last-child {
+  border-bottom: 0px;
+  padding: 20px 0px;
+}
+
+main .main-center .list .cartTotal li:last-child img {
+  margin-left: 10px;
+}
+
+main .main-center .list p {
+  margin-top: 10px;
+}

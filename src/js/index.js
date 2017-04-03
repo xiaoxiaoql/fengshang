@@ -3,10 +3,16 @@ define(['jquery','xqltab'],function($){
 		$('#header-top').load('header.html');
 		$('#footer').load('footer.html');
 
-		$('.tab').xqltab();
+		//导航 显示隐藏
+		var $nav=$('.index-nav li').has('ul');
+		$nav.mouseenter(function(){
+			$(this).children('ul').show();
+		}).mouseleave(function(){
+			$(this).children('ul').hide();
+		})
 
 		//tab切换
-		// $('.tab').xqltab({title:['家居用品','卧室用品','厨浴用品']});
+		$('.tab').xqltab();
 
 		//克隆第一张实现无缝轮播
 		$('.banner').find('li').eq(0).clone().appendTo($('.banner').children('ul'));
