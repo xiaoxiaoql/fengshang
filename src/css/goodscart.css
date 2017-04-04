@@ -27,21 +27,24 @@ main .main-top .rt {
 
 main .main-center {
   padding-top: 40px;
+  text-align: right;
 }
 
 main .main-center .list .goodscart {
   width: 100%;
+  border-top: 1px solid #BBB;
 }
 
 main .main-center .list .goodscart thead th {
   background: #DFDFDF;
+  text-align: center;
+  height: 31px;
 }
 
 main .main-center .list .cartTotal li {
   border-bottom: 1px dotted #BBB;
   height: 40px;
   line-height: 40px;
-  text-align: right;
 }
 
 main .main-center .list .cartTotal li:last-child {
@@ -53,6 +56,34 @@ main .main-center .list .cartTotal li:last-child img {
   margin-left: 10px;
 }
 
+main .main-center .list .cartTotal li:first-child {
+  text-align: left;
+}
+
+main .main-center .list .cartTotal li:first-child p {
+  float: right;
+  margin: 0px;
+}
+
+main .main-center .list .cartTotal li:first-child label {
+  margin: 0 30px 0 150px;
+  color: #d10436;
+}
+
+main .main-center .list .cartTotal li .sum {
+  color: #d10436;
+  font-size: 16px;
+}
+
+main .main-center .list .cartTotal li .kind {
+  color: #d10436;
+}
+
+main .main-center .list .cartTotal li .num {
+  color: #d10436;
+}
+
 main .main-center .list p {
   margin-top: 10px;
+  text-align: left;
 }

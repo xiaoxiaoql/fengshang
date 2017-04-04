@@ -21,12 +21,16 @@ main{
 	}
 	.main-center{
 		padding-top:40px ;
+		text-align:right;
 		.list{
 			.goodscart{
 				width:100%;
+				border-top:1px solid #BBB;
 				thead{
 					th{
 						background:#DFDFDF;
+						text-align:center;
+						height:31px;
 					}
 				}
 			}
@@ -35,7 +39,6 @@ main{
 					border-bottom:1px dotted #BBB;
 					height:40px;
 					line-height:40px;
-					text-align: right;
 					&:last-child{
 						border-bottom:0px;
 						padding:20px 0px;
@@ -44,10 +47,34 @@ main{
 						}
 
 					}
+					&:first-child{
+						text-align:left;
+						p{
+							float:right;
+							margin:0px;
+						}
+						label{
+							margin:0 30px 0 150px;
+							color:#d10436;
+						}
+					}
+
+					.sum{
+						color:#d10436;
+						font-size:16px;
+					}
+					.kind{
+						color:#d10436;
+					}
+					.num{
+						color:#d10436;
+					}
 				}
 			}
 			p{
 				margin-top:10px;
+				text-align:left;
+
 			}
 		}
 	}

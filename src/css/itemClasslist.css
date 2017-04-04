@@ -1,0 +1,246 @@
+main {
+  padding-bottom: 300px;
+}
+
+main .main-top {
+  height: 25px;
+  padding: 10px 0;
+}
+
+main .main-top > ul li {
+  float: left;
+  height: 25px;
+  line-height: 25px;
+}
+
+main .main-top > ul li.hov {
+  position: relative;
+  padding: 0 5px;
+}
+
+main .main-top > ul li.hov:hover {
+  border: 1px dotted #f8784b;
+}
+
+main .main-top > ul li.hov ul {
+  width: 266px;
+  border: 3px solid #cfcaca;
+  position: absolute;
+  top: 28px;
+  left: 0px;
+  display: none;
+  background: #fff;
+}
+
+main .main-top > ul li.classlist ul {
+  padding: 20px 10px;
+}
+
+main .main-top > ul li.classlist ul li {
+  float: left;
+  margin: 0 0 10px -12px;
+  border-left: 1px dotted #c7c7c7;
+  text-align: center;
+}
+
+main .main-top > ul li.classlist ul li a {
+  display: inline-block;
+  width: 120px;
+  padding: 0 12px;
+  margin-bottom: 7px;
+}
+
+main .main-top > ul li.allclass ul li {
+  width: 226px;
+  line-height: 50px;
+  height: 50px;
+  padding: 10px 15px;
+}
+
+main .brand-nav {
+  position: relative;
+  height: 34px;
+  border: 1px solid #e5e5e5;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+main .brand-nav .guid-title {
+  background: #f8f8f8;
+  height: 100%;
+  color: #999;
+  line-height: 34px;
+  width: 130px;
+  border: #f2f2f2;
+  float: left;
+  text-align: right;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+main .brand-nav .more {
+  position: absolute;
+  top: 0px;
+  right: 24px;
+  height: 34px;
+}
+
+main .brand-nav .more a {
+  line-height: 34px;
+  height: 34px;
+  display: inline-block;
+}
+
+main .brand-nav .more .morehide {
+  display: none;
+}
+
+main .brand-nav ul {
+  height: 100%;
+  float: left;
+  width: 970px;
+  overflow: hidden;
+}
+
+main .brand-nav ul li {
+  float: left;
+  padding: 0 10px;
+  line-height: 34px;
+}
+
+main .brand-nav ul li:first-child a {
+  background: #fc4c65;
+  color: #fff;
+}
+
+main .brand-nav ul li a {
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 3px;
+}
+
+main .main-center .leftside {
+  box-sizing: border-box;
+  width: 220px;
+  float: left;
+}
+
+main .main-center .leftside .aside {
+  border: 1px solid #ddd;
+  border-top: 2px solid #fc4c65;
+  margin-top: 10px;
+}
+
+main .main-center .leftside .aside .s-title {
+  background: #f8f8f8;
+  line-height: 36px;
+  padding-left: 10px;
+}
+
+main .main-center .leftside .aside .s-title h3 {
+  color: #666;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+main .main-center .leftside .aside:last-child h3 {
+  display: inline-block;
+  width: 150px;
+}
+
+main .main-center .leftside .aside .s-con {
+  padding: 0 10px;
+}
+
+main .main-center .leftside .goodsclass .s-con {
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+main .main-center .leftside .goodsclass .s-con h4 {
+  border-bottom: 1px dashed #ccc;
+  line-height: 24px;
+  color: #666;
+  background: url(../img/bg_icon02.png) no-repeat 180px 13px;
+}
+
+main .main-center .leftside .goodsclass .s-con ul li {
+  float: left;
+  line-height: 28px;
+  width: 99px;
+}
+
+main .main-center .leftside .goodshot .s-con ul li {
+  border-bottom: 1px dashed #ccc;
+}
+
+main .main-center .leftside .history .s-con ul li {
+  border-bottom: 1px dashed #ccc;
+  padding: 10px 0;
+}
+
+main .main-center .leftside .history .s-con ul li a img {
+  width: 50px;
+  height: 50px;
+  vertical-align: top;
+}
+
+main .main-center .leftside .history .s-con ul li .name {
+  display: inline-block;
+  width: 140px;
+  padding-left: 4px;
+  text-align: center;
+}
+
+main .main-center .rightsection {
+  float: right;
+  width: 968px;
+  margin: 10px 0 0 12px;
+}
+
+main .main-center .rightsection .right-title {
+  height: 32px;
+  line-height: 32px;
+  background: #fafafa;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+main .main-center .rightsection .right-title .songzhi {
+  float: left;
+  padding: 0 15px 0 10px;
+}
+
+main .main-center .rightsection .right-title .songzhi .adress {
+  display: inline-block;
+  padding: 0 15px;
+  line-height: 23px;
+  height: 23px;
+  border: 1px solid #CECBCE;
+  margin: 0 24px  0 8px;
+}
+
+main .main-center .rightsection .right-title ul {
+  float: left;
+}
+
+main .main-center .rightsection .right-title ul li {
+  float: left;
+  border-left: 1px solid #ddd;
+  padding: 0 28px;
+}
+
+main .main-center .rightsection .right-title ul li:last-child {
+  text-align: right;
+  width: 289px;
+}
+
+main .main-center .rightsection .right-title ul li:last-child span {
+  color: #f8784b;
+}
+
+main .main-center .rightsection .right-title ul li:last-child a {
+  margin-right: 5px;
+  color: #666;
+}
