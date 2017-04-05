@@ -1,0 +1,167 @@
+main{
+	.main-nav{
+		height:24px;
+		border-bottom:1px solid #f5f5f5;
+		padding:8px 0;
+	}
+	.main-con{
+		padding:20px 0px;
+		margin-top:12px;
+		position:relative;
+		.main-img{
+			width:100px;
+			img{
+				width:90px;
+				height:90px;
+				border:2px solid #ccc;
+				&:hover{
+					border:2px solid red;
+				}
+			}
+		}
+		.main-smallimg{
+		   width:380px;
+		   margin-left:20px;
+			img{
+				width:380px;
+				height:380px;
+			}
+			
+		}
+		.details{
+			width:438px;
+			margin-left:15px;
+			.details-top{
+				border-bottom:1px dotted #000;
+				h2{
+					font-weight:normal;
+					font-size:17px;
+				}
+				strong{
+					color:#f37b15;
+					height:30px;
+					display:inline-block;
+					line-height:30px;
+				}
+			}
+			.idx{
+				margin:6px 0 6px 6px;
+				span{
+					padding-left:5px;
+				}
+			}
+			.price{
+				font-size:14px;
+				height:36px;
+				line-height:36px;
+				background:#f3f3f3;
+				padding:5px 0;
+				margin-bottom:66px;
+				span{
+					font-size:18px;
+					color:#d91404;
+					font-weight:700;
+				}
+			}
+			.songzhi{
+				padding:20px 0 10px 0;
+				.adress{
+					padding:0 15px;
+					height:26px;
+					line-height:26px;
+					display:inline-block;
+					border:1px solid #ccc; 
+				}
+			}
+			.num{
+				height:30px;
+				line-heigth:30px;
+				padding:10px 0;
+				.jiaj{
+					height:30px;
+					width:26px;
+					font-size:26px;
+					line-height:28px;
+					text-align:center;
+					background:#dedede;
+					display:inline-block;
+					color:#777;
+				}
+				input{
+					height:28px;
+					width:60px;
+					text-align:center;
+					padding:0px;
+					border:1px solid #ccc;
+					vertical-align:top;
+				}
+			}
+			.btn{
+				button{
+				height:30px;
+				padding:0 18px;
+				border:0px;
+				margin-right:20px;
+				background:#2ca530;
+				color:#fff;
+				font-size:14px;
+				}
+				.cartbtn{
+					background:#fc4c65;
+				}
+			}
+			.tips{
+				width:438px;
+				position:absolute;
+				top:50%;
+				left:50%;
+				margin-left:-219px;
+				margin-top:-66px;
+				z-index:999;
+				border:1px solid #fc4c65;
+				display:none;
+				.title{
+					height:32px;
+					line-height:32px;
+					background:#fc4c65;
+					color:#fff;
+					span{
+						position:absolute;
+						top:0px;
+						right:0px;
+					}
+				}
+				.contain{
+					height:100px;
+					background:#fff;
+					text-align:center;
+					p{
+						padding:20px 0;
+						text-align:center;
+					}
+					a{
+						margin-left:15px;
+					}
+				}
+			}
+		}
+		&>div{
+			float:left;
+			.color{
+				
+				span{
+					display:inline-block;
+					height:30px;
+					border:1px solid #ccc;
+					margin-right:10px;
+
+					img{
+					width:30px;
+					height:30px;
+					vertical-align:middle;
+				}
+				}
+			}
+		}
+	}
+}

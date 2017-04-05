@@ -4,12 +4,10 @@ define(['jquery'],function($){
 		$('#footer').load('footer.html');
 
 		//显示隐藏效果
-		// console.log($('.main-top'));
 		// border:1px dotted #f8784b;
 		$('.main-top ul li').has('ul').mouseenter(function(){
 			$(this).children('ul').show();
 			// $(this).css({border:1px dotted #f8784b});
-			console.log($(this))
 		}).mouseleave(function(){
 			$(this).children('ul').hide();
 			// $(this).css({border:0});
@@ -40,7 +38,31 @@ define(['jquery'],function($){
 			 $(this).hide().siblings('.moreshow').show();
 
 		});
-		
+		console.log(666);
+		$.ajax({
+			url:'http://localhost/fs/src/php/itemClasslist.php',
+			dataType:'json',
+			success:function(res){
+				console.log(res);
+				res.forEach(function(item){
+				var li=$('<li><a href="details.html?'+item.idx+'"target="_blank"><img src="../img/list/'+item.url+'"></a><p class="name"><a href="details.html?'+item.idx+'">'+item.brand+item.name+'</a></p><span class="price">&yen'+item.price+'</span><div class="buybtn"><a href="#">立即订购</a></div></li>')
+				$('.rightsection').children('ul').append(li);
+
+				})
+
+
+			}
+		})
+
+
+		$('.rightsection ul').on('click','li',function(){
+			$(this).children('a').addClass('active');
+			$(this).siblings('li').children('a').removeClass('active');
+
+		})
+
+
+
 		
 
 	}

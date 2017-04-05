@@ -358,20 +358,23 @@ main .tab .tab-title {
 main .tab .tab-title span {
   float: right;
   display: inline-block;
-  height: 36px;
+  height: 34px;
 }
 
 main .tab .tab-title span a {
   display: inline-block;
   padding: 0 15px;
-  height: 36px;
-  line-height: 36px;
+  height: 34px;
+  line-height: 34px;
 }
 
 main .tab .tab-title span.active {
   border: 1px solid #d91404;
   z-index: 999;
-  border-bottom: none;
+}
+
+main .tab .tab-title span.active a {
+  border-bottom: 2px solid #fff;
 }
 
 main .tab h2 {

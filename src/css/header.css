@@ -36,6 +36,15 @@ html body .header header .adress {
   line-height: 30px;
   background: #fff;
   margin: 0 14px 0 7px;
+  position: relative;
+}
+
+html body .header header .adress .tab {
+  width: 400px;
+  border: 1px solid #ccc;
+  background: #fff;
+  position: absolute;
+  left: 0px;
 }
 
 html body .header header .login {

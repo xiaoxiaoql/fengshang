@@ -341,19 +341,22 @@ main{
 
 			span{
 				float:right;
-				 display:inline-block;
-				height:36px;
+				display:inline-block;
+				height:34px;
 			   a{
 				   display:inline-block;
 					padding:0 15px;
-					height:36px;
-					line-height:36px;
+					height:34px;
+					line-height:34px;
 
 			   }
 			   &.active{
 				border:1px solid #d91404;
 				z-index:999;
-				border-bottom:none;
+					a{
+						border-bottom:2px solid #fff;
+
+					}
 			   }
 				
 			}

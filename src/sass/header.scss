@@ -22,7 +22,20 @@ html{
 					padding:0 10px;
 					line-height:30px;
 					background:#fff;
-					margin:0 14px 0 7px;;
+					margin:0 14px 0 7px;
+					position:relative;
+					.tab{
+						width:400px;
+						border:1px solid #ccc;
+						background:#fff;
+						position:absolute;
+						left:0px;
+						.tab-title{
+							span{
+								
+							}
+						}
+					}
 				}
 				.login{margin:0 10px;}
 				.public-nav{

@@ -194,9 +194,9 @@ main .main-center .leftside .history .s-con ul li .name {
 }
 
 main .main-center .rightsection {
-  float: right;
+  float: left;
   width: 968px;
-  margin: 10px 0 0 12px;
+  margin-top: 10px;
 }
 
 main .main-center .rightsection .right-title {
@@ -205,6 +205,7 @@ main .main-center .rightsection .right-title {
   background: #fafafa;
   margin-bottom: 10px;
   border: 1px solid #ddd;
+  margin-left: 12px;
 }
 
 main .main-center .rightsection .right-title .songzhi {
@@ -228,7 +229,11 @@ main .main-center .rightsection .right-title ul {
 main .main-center .rightsection .right-title ul li {
   float: left;
   border-left: 1px solid #ddd;
+}
+
+main .main-center .rightsection .right-title ul li a {
   padding: 0 28px;
+  display: inline-block;
 }
 
 main .main-center .rightsection .right-title ul li:last-child {
@@ -243,4 +248,66 @@ main .main-center .rightsection .right-title ul li:last-child span {
 main .main-center .rightsection .right-title ul li:last-child a {
   margin-right: 5px;
   color: #666;
+  padding: 0px;
+}
+
+main .main-center .rightsection .right-title ul li .active {
+  color: #f8784b;
+  background: #fff;
+  background: #fff url(../img/class_btn.gif) no-repeat 62px -60px;
+}
+
+main .main-center .rightsection .list li {
+  float: left;
+  margin: 0 0 42px 10px;
+  padding: 4px 5px;
+  border: 1px solid #e6e6e6;
+}
+
+main .main-center .rightsection .list li a img {
+  width: 220px;
+  height: 220px;
+}
+
+main .main-center .rightsection .list li p {
+  padding-left: 6px;
+  margin-top: 8px;
+}
+
+main .main-center .rightsection .list li p a {
+  display: inline-block;
+  heighrt: 20px;
+  line-height: 18px;
+  overflow: hidden;
+  color: #777;
+}
+
+main .main-center .rightsection .list li .price {
+  color: #d91404;
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+  margin: 30px 0 5px 5px;
+  height: 18px;
+}
+
+main .main-center .rightsection .list li .buybtn {
+  padding: 5px;
+}
+
+main .main-center .rightsection .list li .buybtn a {
+  display: block;
+  width: 90px;
+  height: 30px;
+  padding: 0 18px;
+  background: #fc4c65;
+  line-height: 30px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+main .main-center .rightsection .list li:hover {
+  box-shadow: 0 0 10px 2px #ccc;
 }
