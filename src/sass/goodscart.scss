@@ -33,6 +33,36 @@ main{
 						height:31px;
 					}
 				}
+				tbody{
+				 tr{
+				 	td{
+				 		text-align:left;
+				 		img{
+				 		width:50px;
+				 		height:50px;
+				 		border:1px solid #ccc;
+				 		vertical-align:top
+				 		}
+				 	border-bottom:1px solid #DFDFDF;
+
+				 	}
+				 	.number{
+				 		input{
+				 			width:40px;
+				 			height:16px;
+				 		}
+				 		span{
+				 			border:1px solid #ccc;
+				 			font-size:14px;
+				 			padding:0 5px;
+				 			margin:0 5px;
+				 		}
+				 	}
+				 	.price{
+				 		color:#d10436;;
+				 	}
+				 }
+				}
 			}
 			.cartTotal{
 				li{
@@ -59,7 +89,7 @@ main{
 						}
 					}
 
-					.sum{
+					.total{
 						color:#d10436;
 						font-size:16px;
 					}

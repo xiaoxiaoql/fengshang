@@ -4,6 +4,7 @@ define(['jquery'],function($){
 		$('#footer').load('footer.html');
 		var str=location.href;
 		var num=str.indexOf('?');
+		var $details=$('.details');
 		//获取商品编号
 		var id=str.slice(num+1);
 		console.log(id);
@@ -15,12 +16,13 @@ define(['jquery'],function($){
 				success:function(res){
 					console.log(res);
 					res.forEach(function(item){
-						console.log(item.idx);
 						if(id==item.idx){
-							$('.main-smallimg')	.children('img').attr('src','../img/list/'+item.idx+'-2-1.jpg')	;
+							$('.main-smallimg').children('img').attr('src','../img/list/'+item.idx+'-2-1.jpg')	;
 							$('.main-img').children('img').attr('src','../img/list/'+item.idx+'-3-1.jpg');
 							resolve(item.idx);
-
+							$details.children('.details-top').children('h2').text(item.brand+item.name);
+							$details.children('.idx').children('span').text(item.idx);
+							$details.children('.price').children('span').html('&yen'+item.price)
 						}
 						
 					})
@@ -32,9 +34,14 @@ define(['jquery'],function($){
 		data.then(function(res){
 			$('.cartbtn').click(function(){
 				arr.push(res);
-				var now=new Date();
-				now.setDate(now.getDate()+999);
-				document.cookie='goods='+JSON.stringify(arr)+';expires='+now;
+				$('.tips').show();
+				$.ajax({
+					url:'http://localhost/fs/src/php/addcart.php',
+					data:{num:id},
+					success:function(res){
+						console.log(res);
+					}
+				})
 			})
 		})
 		

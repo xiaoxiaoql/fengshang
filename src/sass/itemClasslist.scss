@@ -1,5 +1,4 @@
 main{
-	padding-bottom:300px;
 	.main-top{
 		height:25px;
 		padding:10px 0;
@@ -303,6 +302,23 @@ main{
 					}
 					&:hover{
 						box-shadow: 0 0 10px 2px #ccc;
+					}
+				}
+			}
+			.page{
+				text-align:right;
+				a{
+					display:inline-block;
+					padding:5px;
+					img{
+						margin:0 10px;
+
+					}
+				}
+				span{
+					a.curren{
+						background:#fc4c65;
+						color:#fff;
 					}
 				}
 			}

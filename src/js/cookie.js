@@ -1,10 +1,10 @@
 define(function(){
 	return function(){
 		$('.list li').on('click','a',function(){
-			var src=$(this).children('img').attr('src');
-			var name=$(this).children('p').text();
-			document.cookie='src='+src;
-			document.cookie='name='+name;
+			var guidx=$(this).attr(guidx);
+			var now=new Date();
+			now.setDate(now.getDate()+30);
+			document.cookie='cookies='+guidx+';expires'+now;
 		})
 	}
 })

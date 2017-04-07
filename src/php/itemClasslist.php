@@ -1,4 +1,5 @@
 <?php
+	$page=isset($_GET['page'])?$_GET['page']:'';
 	$servername='localhost';
 	$username='root';
 	$password='';
@@ -12,7 +13,8 @@
 	}
 
 	//查询数据命令
-	$sql='select * from goods';
+	$sql='select * from goods order by id limit '. ($page*40) .','. ($page+1)*40;
+	
 
 	//解决文字乱码
 	$result=$conn->query('set names utf8');
