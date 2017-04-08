@@ -95,6 +95,9 @@
 						background:url(../img/index_icon2.png) no-repeat 22px 1px;
 						
 					}
+					&:first-child{
+						background:#cc4155;
+					}
 					&:nth-child(2){
 						a{
 							
@@ -131,6 +134,9 @@
 							background-position:22px -298px;
 						}
 					}
+					&:hover{
+						background:#cc4155;
+					}
 				}
 
 
@@ -143,6 +149,9 @@
 .banner{
 	width:100%;
 	height:398px;
+	width:1920px;
+	margin-left:-960px;
+	left:50%;
 	position:relative;
 	overflow:hidden;
 	ul{
@@ -261,13 +270,17 @@ main{
 				height:665px;
 				overflow:hidden;
 				background:#fff;
+				position:relative;
 				ul{
+					position:absolute;
+					width:800px;
 					li{
 						width:400px;
 						height:665px;
 						border-top:1px solid #ccc;
 						padding:10px 20px 0;
 						box-sizing:border-box;
+						float:left;
 						a{
 
 							img{

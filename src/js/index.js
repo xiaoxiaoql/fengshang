@@ -5,13 +5,6 @@ define(['jquery','xqltab'],function($){
 		$('#header-center').load('search.html');
 		$('.index-nav').load('nav.html');
 
-		//导航 显示隐藏
-		// var $nav=$('.index-nav li').has('ul');
-		// $nav.mouseenter(function(){
-		// 	$(this).children('ul').show();
-		// }).mouseleave(function(){
-		// 	$(this).children('ul').hide();
-		// })
 
 		//tab切换
 		$('.tab').xqltab();
@@ -22,10 +15,11 @@ define(['jquery','xqltab'],function($){
 		var idx=0;
 		var $banner=$('.banner');
 		var len=$banner.children('ul').children().length;
-		var width=$banner.width();
+		// $('img').load(function(){
+		// 	console.log($banner.find('img').width)
+		// })
 		//设置图片宽度 ul宽度
-		$banner.find('img').css({'width':width});
-		$banner.children('ul').css({'width':len*width});
+		$banner.children('ul').css({'width':len*1920});
 
 
 		//轮播图
@@ -71,11 +65,8 @@ define(['jquery','xqltab'],function($){
 			.siblings('span').removeClass('active');
 			}
 			//添加动画
-			$('.banner').children('ul').animate({left:-idx*width},500);
+			$('.banner').children('ul').animate({left:-idx*1920},500);
 		}	
-
-		
-
 
 	}
 })

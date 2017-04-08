@@ -68,6 +68,12 @@ define(['jquery'],function($){
 							$details.children('.details-top').children('h2').text(item.brand+item.name);
 							$details.children('.idx').children('span').text(item.idx);
 							$details.children('.price').children('span').html('&yen'+item.price)
+							var url=isHasImg('../img/list/'+item.idx+'-4-1.jpg');
+							if(url){
+								console.log(url)
+								$('.adv').append('<img src="../img/list/'+item.idx+'-4-1.jpg">');
+
+							}
 							resolve(item.idx);
 						}
 						
@@ -88,7 +94,20 @@ define(['jquery'],function($){
 						console.log(res);
 					}
 				})
+			});
+			$('.details').on('click','.add',function(){
+				var val=$(this).prev().val();
+				$(this).prev().val(Number(val)+1);
+
+			}).on('click','.reduce',function(){
+				var val=$(this).next().val();
+				if(val=1){
+					val=2;
+				}
+				$(this).next().val(Number(val)-1);
+
 			})
+
 
 			//放大镜效果
 			zoom();
@@ -155,6 +174,27 @@ define(['jquery'],function($){
 			})
 
 		}
+		
+		function isHasImg(url)  
+		    {      
+		        var xmlHttp ;  
+		        if (window.ActiveXObject)  
+		         {  
+		          xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");  
+		         }  
+		         else if (window.XMLHttpRequest)  
+		         {  
+		          xmlHttp = new XMLHttpRequest();  
+		         }   
+		        xmlHttp.open("get",url,false);  
+		        xmlHttp.send();  
+		        if(xmlHttp.status==404)  
+		        return false;  
+		        else  
+		        return true;  
+		    }   
+
+		
 
 
 	}

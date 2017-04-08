@@ -25,14 +25,45 @@ html{
 					margin:0 14px 0 7px;
 					position:relative;
 					.tab{
+						display:none;
 						width:400px;
+						height:480px;
 						border:1px solid #ccc;
 						background:#fff;
 						position:absolute;
+						z-index:1000;
 						left:0px;
+						padding:10px;
 						.tab-title{
+							height:30px;
+							border-bottom:1px solid #333;
 							span{
-								
+								display:inline-block;
+								padding:0 15px;
+								margin-left:5px;
+								height:28px;
+								border:1px solid #ccc;
+								color:#ccc;
+							}
+							.currentitle{
+								border-bottom:2px solid #fff;
+								color:#333;
+							}
+						}
+						.content{
+							position:relative;
+							.adr{
+								position:absolute;
+								background:#fff;
+								width:100%;
+								top:0px;
+								left:0px;
+								span{
+									display:inline-block;
+									height:30px;
+									margin:0 80px 5px 20px;
+
+								}
 							}
 						}
 					}
@@ -42,12 +73,34 @@ html{
 					float:right;
 					li{
 						float:left;
-						a{
+						position:relative;
+						& > a{
 							padding:5px 10px;
 							&:hover{
 								background:#fc4c65;
 								color:#fff;
 							}
+						}
+						ul{
+							position:absolute;
+							background:#fff;
+							z-index:1000;
+							border:2px solid #fc4c65;
+							top:30px;
+							left:-1px;
+							padding:0 3px;
+							box-sizing:border-box;
+							display:none;
+							li{
+								border-bottom:1px dotted #ccc;
+								a{
+									display:block;
+									width:48px;
+									height:31px;
+									line-height:31px;
+								}
+							}
+							
 						}
 					}
 					.tel{

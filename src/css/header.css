@@ -40,11 +40,52 @@ html body .header header .adress {
 }
 
 html body .header header .adress .tab {
+  display: none;
   width: 400px;
+  height: 480px;
   border: 1px solid #ccc;
   background: #fff;
   position: absolute;
+  z-index: 1000;
   left: 0px;
+  padding: 10px;
+}
+
+html body .header header .adress .tab .tab-title {
+  height: 30px;
+  border-bottom: 1px solid #333;
+}
+
+html body .header header .adress .tab .tab-title span {
+  display: inline-block;
+  padding: 0 15px;
+  margin-left: 5px;
+  height: 28px;
+  border: 1px solid #ccc;
+  color: #ccc;
+}
+
+html body .header header .adress .tab .tab-title .currentitle {
+  border-bottom: 2px solid #fff;
+  color: #333;
+}
+
+html body .header header .adress .tab .content {
+  position: relative;
+}
+
+html body .header header .adress .tab .content .adr {
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+html body .header header .adress .tab .content .adr span {
+  display: inline-block;
+  height: 30px;
+  margin: 0 80px 5px 20px;
 }
 
 html body .header header .login {
@@ -57,15 +98,39 @@ html body .header header .public-nav {
 
 html body .header header .public-nav li {
   float: left;
+  position: relative;
 }
 
-html body .header header .public-nav li a {
+html body .header header .public-nav li > a {
   padding: 5px 10px;
 }
 
-html body .header header .public-nav li a:hover {
+html body .header header .public-nav li > a:hover {
   background: #fc4c65;
   color: #fff;
+}
+
+html body .header header .public-nav li ul {
+  position: absolute;
+  background: #fff;
+  z-index: 1000;
+  border: 2px solid #fc4c65;
+  top: 30px;
+  left: -1px;
+  padding: 0 3px;
+  box-sizing: border-box;
+  display: none;
+}
+
+html body .header header .public-nav li ul li {
+  border-bottom: 1px dotted #ccc;
+}
+
+html body .header header .public-nav li ul li a {
+  display: block;
+  width: 48px;
+  height: 31px;
+  line-height: 31px;
 }
 
 html body .header header .public-nav .tel {

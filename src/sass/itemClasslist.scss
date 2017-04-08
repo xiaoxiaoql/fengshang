@@ -356,11 +356,57 @@ main{
 					padding:0 15px 0 10px;
 					.adress{
 						display:inline-block;
-						padding:0 15px;
-						line-height:23px;
-						height:23px;
-						border:1px solid #CECBCE;
-						margin:0 24px  0 8px;
+						width:160px;
+						height:30px;
+						border:1px solid #ccc;
+						padding:0 10px;
+						line-height:30px;
+						background:#fff;
+						margin:0 14px 0 7px;
+						position:relative;
+						.tab{
+							display:none;
+							width:400px;
+							height:480px;
+							border:1px solid #ccc;
+							background:#fff;
+							position:absolute;
+							z-index:1000;
+							left:0px;
+							padding:10px;
+							.tab-title{
+								height:30px;
+								border-bottom:1px solid #333;
+								span{
+									display:inline-block;
+									padding:0 15px;
+									margin-left:5px;
+									height:28px;
+									border:1px solid #ccc;
+									color:#ccc;
+								}
+								.currentitle{
+									border-bottom:2px solid #fff;
+									color:#333;
+								}
+							}
+							.content{
+								position:relative;
+								.adr{
+									position:absolute;
+									background:#fff;
+									width:100%;
+									top:0px;
+									left:0px;
+									span{
+										display:inline-block;
+										height:30px;
+										margin:0 80px 5px 20px;
+
+									}
+								}
+							}
+						}
 					}
 				}
 				ul{

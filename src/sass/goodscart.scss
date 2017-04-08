@@ -13,6 +13,51 @@ main{
 				height:28px;
 				line-height:28px;
 				padding:0 10px;
+				position:relative;
+				width:160px;
+				.tab{
+					display:none;
+					width:400px;
+					height:480px;
+					border:1px solid #ccc;
+					background:#fff;
+					position:absolute;
+					z-index:1000;
+					left:0px;
+					padding:10px;
+					.tab-title{
+						height:30px;
+						border-bottom:1px solid #333;
+						span{
+							display:inline-block;
+							padding:0 15px;
+							margin-left:5px;
+							height:28px;
+							border:1px solid #ccc;
+							color:#ccc;
+						}
+						.currentitle{
+							border-bottom:2px solid #fff;
+							color:#333;
+						}
+					}
+					.content{
+						position:relative;
+						.adr{
+							position:absolute;
+							background:#fff;
+							width:100%;
+							top:0px;
+							left:0px;
+							span{
+								display:inline-block;
+								height:30px;
+								margin:0 80px 5px 20px;
+
+							}
+						}
+					}
+				}
 			}
 		}
 		.rt{
@@ -42,6 +87,12 @@ main{
 				 		height:50px;
 				 		border:1px solid #ccc;
 				 		vertical-align:top
+					 		
+				 		}
+				 		td:last-child{
+				 			a{
+				 				margin-left:10px;
+				 			}
 				 		}
 				 	border-bottom:1px solid #DFDFDF;
 
