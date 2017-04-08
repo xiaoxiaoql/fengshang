@@ -21,7 +21,7 @@
 				values ('".$name."', '".$pasw."')";
 		//若能查询获取到数据库的数据，则插入数据成功		
 		if ($conn->query($sql) === TRUE) {
-		    echo "新记录插入成功";
+		    echo "yes";
 		} else {
 		    echo "Error: " . $sql . "<br>" . $conn->error;
 		}

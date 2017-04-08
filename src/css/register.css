@@ -89,3 +89,27 @@ main .regist .contain .form-reg table td .regsbtn {
   color: #fff;
   font-size: 14px;
 }
+
+.poput {
+  width: 400px;
+  height: 200px;
+  border: 3px solid #fc4c65;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -100px;
+  display: none;
+}
+
+.poput p {
+  font-size: 20px;
+  color: #999;
+  line-height: 60px;
+  text-align: center;
+}
+
+.poput .times {
+  color: red;
+}

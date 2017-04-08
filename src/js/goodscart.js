@@ -48,7 +48,7 @@ define(['jquery','xqltab'],function($){
 						 	<td class="price">&yen${item.price}</td>
 						 	<td>有库存</td>
 						 	<td>是</td>
-						 	<td class="number"><span>+</span><input type="text" value="1"/><span>-</span></td>
+						 	<td class="number"><span class='add'>+</span><input type="text" value="1"/><span class="sub">-</span></td>
 						 	<td class="sum">&yen${item.price}</td>
 						 	<td><a href="#">收藏</a><a href="#" class="del">删除</a></td>
 						 </tr>`;
@@ -74,7 +74,7 @@ define(['jquery','xqltab'],function($){
 				$.ajax({
 					url:'http://localhost/fs/src/php/addcart.php',
 					data:{del:delid},
-					success:function(a){
+					success:function(data){
 					}
 
 				})
@@ -92,16 +92,32 @@ define(['jquery','xqltab'],function($){
 
 			});
 
-			// //批量删除
-			// $('.cartTotal').on('click','.delall',function(){
-			// 	//发送请求，删除数据库中信息
-			// 	$.ajax({
-			// 		url:'http://localhost/fs/src/php/addcart.php',
-			// 		data:{delall:true},
-			// 		success:function(){
-			// 		}
-			// 	})
-			// })
+			//商品数量的加减 金额改变
+			$table.on('click','.add',function(){
+				var goodsval=$(this).next('input').val();
+				$(this).next('input').val(Number(goodsval)+1);
+				var subtotal=Number($(this).next('input').val())*Number($(this).closest('tr').find('.price').text().slice(1));
+				$(this).closest('tr').find('.sum').text(subtotal);
+				//总计
+				// var zj=0;
+				// $table.find('tr').each(function(){
+				// 	zj+=Number($(this).children('.price').text().slice(1))*Number($(this).find('input').val());
+				// })
+				// $('.total').each(function(){
+				// 	$(this).text(zj);
+				// })
+
+			}).on('click','.sub',function(){
+				var goodsval=$(this).prev('input').val();
+				if(Number(goodsval)<=1){
+					$(this).prev('input').val(1);
+				}else{
+					$(this).prev('input').val(Number(goodsval)-1);
+				}
+				var subtotal=Number($(this).prev('input').val())*Number($(this).closest('tr').find('.price').text().slice(1));
+				$(this).closest('tr').find('.sum').text(subtotal);
+			})
+
 
 		})
 		

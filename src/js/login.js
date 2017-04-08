@@ -51,7 +51,7 @@ define(['jquery'],function($){
 							console.log(res=='ok');
 							if(res=='ok'){
 								setTimeout(function(){
-									location.href='index.html'
+									location.href='index.html';
 								},100);
 							}
 						}

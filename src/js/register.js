@@ -30,6 +30,20 @@ define(['jquery'],function($){
 				// dataType:'json',
 				success:function(res){
 					console.log(res);
+					if(res=='yes'){
+						$('.poput').show();
+						var n=5;
+						setInterval(function(){
+							n--;
+							$('.poput').children('.times').html(n+'s');
+
+						},1000)
+						setTimeout(function(){
+							location.href='login.html';
+						},5000);
+					}
+					//注册成功后5s后跳转到登录页面
+					
 
 				}
 			})

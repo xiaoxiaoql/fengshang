@@ -1,6 +1,4 @@
 <?php
-	$num=isset($_GET['num'])?$_GET['num']:'';
-	// $obj=array('username'=>$username,'pasw'=>$pasw);
 	$servername='localhost';
 	$username='root';
 	$password='';

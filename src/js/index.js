@@ -2,14 +2,16 @@ define(['jquery','xqltab'],function($){
 	return function(){
 		$('#header-top').load('header.html');
 		$('#footer').load('footer.html');
+		$('#header-center').load('search.html');
+		$('.index-nav').load('nav.html');
 
 		//导航 显示隐藏
-		var $nav=$('.index-nav li').has('ul');
-		$nav.mouseenter(function(){
-			$(this).children('ul').show();
-		}).mouseleave(function(){
-			$(this).children('ul').hide();
-		})
+		// var $nav=$('.index-nav li').has('ul');
+		// $nav.mouseenter(function(){
+		// 	$(this).children('ul').show();
+		// }).mouseleave(function(){
+		// 	$(this).children('ul').hide();
+		// })
 
 		//tab切换
 		$('.tab').xqltab();

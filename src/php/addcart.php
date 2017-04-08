@@ -1,6 +1,6 @@
 <?php
 	$num=isset($_GET['num'])?$_GET['num']:'';
-	$delidx=isset($_GET['delid'])?$_GET['delid']:'';
+	$delidx=isset($_GET['del'])?$_GET['del']:'';
 	$servername='localhost';
 	$username='root';
 	$password='';
