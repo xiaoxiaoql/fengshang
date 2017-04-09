@@ -57,7 +57,7 @@ define(['jquery'],function($){
 		var arr=[];
 		var data=new Promise(function(resolve,reject){
 			$.ajax({
-				url:"http://localhost/fs/src/php/itemClasslist.php",
+				url:"http://localhost/fs/src/php/goodscart.php",
 				dataType:'json',
 				success:function(res){
 					console.log(res);
@@ -71,7 +71,7 @@ define(['jquery'],function($){
 							var url=isHasImg('../img/list/'+item.idx+'-4-1.jpg');
 							if(url){
 								console.log(url)
-								$('.adv').append('<img src="../img/list/'+item.idx+'-4-1.jpg">');
+								$('.adv').children().eq(0).append('<img src="../img/list/'+item.idx+'-4-1.jpg">');
 
 							}
 							resolve(item.idx);
@@ -84,14 +84,28 @@ define(['jquery'],function($){
 		})
 
 		data.then(function(res){
-			$('.cartbtn').click(function(){
+			$('.details').on('click','.cartbtn',function(){
 				arr.push(res);
 				$('.tips').show();
 				$.ajax({
 					url:'http://localhost/fs/src/php/addcart.php',
-					data:{num:id},
+					// data:{num:id},
+					dataType:'json',
 					success:function(res){
-						console.log(res);
+						//若购物车中商品存在，则不再添加 并且出现提示
+						for(var i=0;i<res.length;i++){
+							if(res[i].idx===id){
+								$('.tips').find('p').text('购物车中已存在该商品')
+								.css('color','#f00');
+								break;
+							}
+						}
+						if(i==res.length){
+							$.ajax({
+								url:'http://localhost/fs/src/php/addcart.php',
+								data:{num:id,check:1}
+							})
+						}
 					}
 				})
 			});
@@ -112,12 +126,14 @@ define(['jquery'],function($){
 			//放大镜效果
 			zoom();
 
-		})
+		});
+		
+		
 
-		$('.box').children().eq(0).show().siblings().hide()
+		$('.adv').children().eq(0).show().siblings().hide()
 		$('.title-nav').on('click','span',function(){
 			$(this).addClass('active').siblings().removeClass('active');
-			$(this).closest('.f-main').find('.box').children().eq($(this).index()).show()
+			$(this).closest('.f-main').find('.adv').children().eq($(this).index()).show()
 			.siblings().hide();
 		})
 

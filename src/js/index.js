@@ -14,14 +14,9 @@ define(['jquery','xqltab'],function($){
 		var times;
 		var idx=0;
 		var $banner=$('.banner');
+		var width=$banner.outerWidth();
 		var len=$banner.children('ul').children().length;
-		// $('img').load(function(){
-		// 	console.log($banner.find('img').width)
-		// })
-		//设置图片宽度 ul宽度
-		$banner.children('ul').css({'width':len*1920});
-
-
+		$banner.children('ul').css({'width':len*width});
 		//轮播图
 		//添加分页
 		var $page=$('<div/>');
@@ -65,8 +60,38 @@ define(['jquery','xqltab'],function($){
 			.siblings('span').removeClass('active');
 			}
 			//添加动画
-			$('.banner').children('ul').animate({left:-idx*1920},500);
+			$('.banner').children('ul').animate({left:-idx*width},500);
 		}	
+
+		$.ajax({
+			url:"http://localhost/fs/src/php/addcart.php",
+			dataType:'json',
+			success:function(data){
+				$('.shopcart').html(data.length);
+
+			}
+		})
+		$.ajax({
+			url:"http://localhost/fs/src/php/goodscart.php",
+			dataType:'json',
+			success:function(data){
+				console.log(data);
+				var html='';
+				for(var i=0;i<6;i++){
+					console.log(data[i])
+					html+=` 
+					<li>
+						<a href="datails.html?${data[i].idx}"><img src="../img/list/${data[i].idx}-1.jpg" ></a>
+						<p><a href="datails.html?${data[i].idx}">${data[i].brand}${data[i].name}</a></p>
+						<span class="price">&yen${data[i].price}</span>
+					</li>
+					`;
+				}
+				$('.hot-list').children('ul').append(html);
+				
+
+			}
+		})
 
 	}
 })

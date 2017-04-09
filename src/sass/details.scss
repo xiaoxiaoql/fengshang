@@ -388,6 +388,7 @@ main{
 	  .f-main{
 	  	float:right;
 	  	width:960px;
+	  	overflow:hidden;
 	  	.title-nav{
 	  		height:38px;
 	  		border-bottom:1px solid #ccc;
@@ -404,13 +405,13 @@ main{
 	  		}
 	  	}
 	  	.adv{
-	  		position:relative;
 	  		padding-bottom:20px;
 	  		.intr{
 	  			padding:20px 10px;
-	  			position:absolute;
 	  			top:20px;
 	  			left:10px;
+	  			float:left;
+	  			min-height:500px;
 	  		}
 	  	}
 	  	

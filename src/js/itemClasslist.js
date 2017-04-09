@@ -86,18 +86,8 @@ define(['jquery'],function($){
 		//点击分页效果
 		var $page=$('.page');
 		show();
-		$.ajax({
-			url:'../js/list.json',
-			success:function(res){
-				console.log(res.brand.length);
-				for(var i=0;i<res.brand.length;i++){
-					var $li=$('<li><a href="#">'+res.brand[i]+'</a></li>');
-					$brandNav.children('ul').append($li);
-				}
-
-			}
-		});
-		$page.on('click','span a',function(){
+		
+		$('.rightsection').on('click','.page span a',function(){
 			console.log($(this).index())
 			page=$(this).index();
 			show();
@@ -123,6 +113,7 @@ define(['jquery'],function($){
 				page=len-1;
 				$(this).css('color','#ccc');
 			}
+			$('.pages').html(page+1+'/3');
 			$page.children('span').children().eq(page).addClass('curren')
 			.siblings().removeClass('curren');
 			ajax();
@@ -142,15 +133,22 @@ define(['jquery'],function($){
 			if(i==arr.length){
 				arr.push(cookieidx);
 			}
-			// arr.forEach(function(item){
-			// 	if(cookieidx!==item){
-			// 		arr.push(cookieidx); 
-			// 	}
-			// })
+			
 			var now=new Date();
 			now.setDate(now.getDate()+30)
 			document.cookie='goods='+JSON.stringify(arr)+';expires'+now;
+		});
+		
+		$.ajax({
+			url:"http://localhost/fs/src/php/addcart.php",
+			dataType:'json',
+			success:function(data){
+				console.log(data);
+				$('.shopcart').html(data.length);
+
+			}
 		})
+
 
 
 		//封装把数据库内容写入页面的函数
@@ -161,6 +159,8 @@ define(['jquery'],function($){
 				dataType:'json',
 				success:function(res){
 					var tex='';
+					var $brand=[];
+					$('.all').html(res.length);
 					$('.rightsection').children('ul').html('');
 					res.forEach(function(item){
 						// var li=$('<li><a href="details.html?'+item.idx+'"target="_blank" guid-data="'+item.idx+'"><img src="../img/list/'+item.url+'"></a><p class="name"><a href="details.html?'+item.idx+'">'+item.brand+item.name+'</a></p><span class="price">&yen'+item.price+'</span><div class="buybtn"><a href="#">立即订购</a></div></li>')
@@ -174,17 +174,33 @@ define(['jquery'],function($){
 			 				</li>
 						`;
 
+						
+						if($brand.indexOf(item.brand)==-1){
+							$brand.push(item.brand);
+						}
+						
+
 					})
 					$('.rightsection').children('ul').html(tex);
+					var $li='';
+					$brand.forEach(function(item){
+						$li+=`<li><a href="#">${item}</a></li>`
+					})
+					$brandNav.children('ul').append($li);
 
 				}
 			})
 
 		}
 		$('.rightsection ul').on('click','li',function(){
+			console.log($(this).text());
 			$(this).children('a').addClass('active');
 			$(this).siblings('li').children('a').removeClass('active');
 
+		});
+		$('.brand-nav ul').on('click','li',function(){console.log(666);
+			$(this).children().addClass('currenbrand');
+			$(this).siblings().children().removeClass('currenbrand');
 		})
 
 	}

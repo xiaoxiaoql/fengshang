@@ -81,6 +81,11 @@ main .main-center {
   text-align: right;
 }
 
+main .main-center .total {
+  font-size: 20px;
+  color: #d10436;
+}
+
 main .main-center .list .goodscart {
   width: 100%;
   border-top: 1px solid #BBB;
@@ -104,7 +109,7 @@ main .main-center .list .goodscart tbody tr td img {
   vertical-align: top;
 }
 
-main .main-center .list .goodscart tbody tr td td:last-child a {
+main .main-center .list .goodscart tbody tr td:last-child a {
   margin-left: 10px;
 }
 

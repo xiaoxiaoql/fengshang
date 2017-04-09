@@ -415,6 +415,7 @@ main .main-foot .f-side .samelist ul li p {
 main .main-foot .f-main {
   float: right;
   width: 960px;
+  overflow: hidden;
 }
 
 main .main-foot .f-main .title-nav {
@@ -436,15 +437,15 @@ main .main-foot .f-main .title-nav span.active {
 }
 
 main .main-foot .f-main .adv {
-  position: relative;
   padding-bottom: 20px;
 }
 
 main .main-foot .f-main .adv .intr {
   padding: 20px 10px;
-  position: absolute;
   top: 20px;
   left: 10px;
+  float: left;
+  min-height: 500px;
 }
 
 .bigcon {

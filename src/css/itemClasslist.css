@@ -113,6 +113,10 @@
   background: url(../img/index_icon2.png) no-repeat 22px 1px;
 }
 
+.header .index-nav li:first-child ul li:first-child {
+  background: #cc4155;
+}
+
 .header .index-nav li:first-child ul li:nth-child(2) a {
   background-position: 22px -48px;
 }
@@ -135,6 +139,60 @@
 
 .header .index-nav li:first-child ul li:nth-child(7) a {
   background-position: 22px -298px;
+}
+
+.header .index-nav li:first-child ul li:hover {
+  background: #cc4155;
+}
+
+.side-nav {
+  position: fixed;
+  height: 100%;
+  background: #888;
+  width: 36px;
+  right: 0px;
+  top: 0px;
+}
+
+.side-nav ul {
+  margin-top: 60px;
+  padding: 0 5px;
+  border-sizing: border-box;
+}
+
+.side-nav ul li {
+  text-align: center;
+  border-top: 1px solid #fff;
+}
+
+.side-nav ul li a {
+  color: #fff;
+  width: 15px;
+  display: inline-block;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.side-nav ul li a span {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+  background: red;
+  margin-top: 10px;
+}
+
+.side-nav ul .weicode a span {
+  display: none;
+  position: absolute;
+  left: -112px;
+  top: 320px;
+}
+
+.side-nav ul .weicode:hover span {
+  display: block;
 }
 
 main .main-top {
@@ -244,16 +302,16 @@ main .brand-nav ul li {
   line-height: 34px;
 }
 
-main .brand-nav ul li:first-child a {
-  background: #fc4c65;
-  color: #fff;
-}
-
 main .brand-nav ul li a {
   display: inline-block;
   height: 24px;
   line-height: 24px;
   padding: 0 3px;
+}
+
+main .brand-nav ul li .currenbrand {
+  background: #fc4c65;
+  color: #fff;
 }
 
 main .main-center .leftside {

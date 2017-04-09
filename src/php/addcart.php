@@ -1,6 +1,7 @@
 <?php
 	$num=isset($_GET['num'])?$_GET['num']:'';
 	$delidx=isset($_GET['del'])?$_GET['del']:'';
+	$check=isset($_GET['check'])?$_GET['check']:'';
 	$servername='localhost';
 	$username='root';
 	$password='';
@@ -21,7 +22,7 @@
 			}
 
 		}
-		if($num!=''){
+		if($num!=''&&$check==1){
 			// 插入数据
 			$sql = "INSERT INTO cartlist (idx) values ('".$num."')";
 			//若能查询获取到数据库的数据，则插入数据成功		

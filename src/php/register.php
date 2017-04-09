@@ -14,6 +14,7 @@
 	if ($conn->connect_error) {
 	    die("连接失败: " . $conn->connect_error);
 	} 
+	
 
 	if($name!=''&&$pasw!=''){
 		// 插入数据

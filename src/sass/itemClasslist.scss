@@ -66,6 +66,7 @@
 
 		}
 		li:first-child{
+
 			a{
 				width:221px;
 				height:38px;
@@ -94,6 +95,9 @@
 						line-height:52px;
 						background:url(../img/index_icon2.png) no-repeat 22px 1px;
 						
+					}
+					&:first-child{
+						background:#cc4155;
 					}
 					&:nth-child(2){
 						a{
@@ -131,12 +135,66 @@
 							background-position:22px -298px;
 						}
 					}
+					&:hover{
+						background:#cc4155;
+					}
 				}
 
 
 			}
 		}
 
+	}
+}
+.side-nav{
+	position:fixed;
+	height:100%;
+	background:#888;
+	width:36px;
+	right:0px;
+	top:0px;
+	ul{
+		margin-top:60px;
+		padding:0 5px;
+		border-sizing:border-box;
+		li{
+			text-align:center;
+			border-top:1px solid #fff;
+
+			a{
+				color:#fff;
+				width:15px;
+				display:inline-block;
+				padding:20px 0px;
+				text-align:center;
+				span{
+					display:inline-block;
+					width:20px;
+					text-align:center;
+					height:20px;
+					line-height:20px;
+					border-radius:50%;
+					background:red;
+					margin-top:10px;
+				}
+
+			}
+
+		}
+		.weicode{
+			a{
+				span{
+					display:none;
+					position:absolute;
+					left:-112px;
+					top:320px;
+				}
+				
+			}
+			&:hover span{
+					display:block;
+				}
+		}
 	}
 }
 main{
@@ -237,12 +295,6 @@ main{
 			overflow:hidden;
 			li{
 				float:left;
-				&:first-child{
-					a{
-						background:#fc4c65;
-						color:#fff;
-					}
-				}
 				padding:0 10px;
 				line-height:34px;
 				a{
@@ -251,6 +303,11 @@ main{
 					line-height:24px;
 					padding:0 3px;
 				}
+				.currenbrand{
+					background:#fc4c65;
+					color:#fff;
+				}
+
 			}
 
 		}

@@ -222,13 +222,14 @@
 				span{
 					display:none;
 					position:absolute;
-					left:-112px;
+					left:-110px;
 					top:320px;
 				}
 				
 			}
 			&:hover span{
 					display:block;
+					z-index:999;
 				}
 		}
 	}
