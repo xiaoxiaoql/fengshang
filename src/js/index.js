@@ -81,8 +81,8 @@ define(['jquery','xqltab'],function($){
 					console.log(data[i])
 					html+=` 
 					<li>
-						<a href="datails.html?${data[i].idx}"><img src="../img/list/${data[i].idx}-1.jpg" ></a>
-						<p><a href="datails.html?${data[i].idx}">${data[i].brand}${data[i].name}</a></p>
+						<a href="details.html?${data[i].idx}"><img src="../img/list/${data[i].idx}-1.jpg" ></a>
+						<p><a href="details.html?${data[i].idx}">${data[i].brand}${data[i].name}</a></p>
 						<span class="price">&yen${data[i].price}</span>
 					</li>
 					`;

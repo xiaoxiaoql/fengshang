@@ -108,7 +108,11 @@ define(['jquery'],function($){
 						}
 					}
 				})
+			})
+			.on('click','.closebtn',function(){
+				$('.tips').hide();
 			});
+			
 			$('.details').on('click','.add',function(){
 				var val=$(this).prev().val();
 				$(this).prev().val(Number(val)+1);
@@ -121,8 +125,6 @@ define(['jquery'],function($){
 				$(this).next().val(Number(val)-1);
 
 			})
-
-
 			//放大镜效果
 			zoom();
 

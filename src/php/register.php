@@ -14,6 +14,17 @@
 	if ($conn->connect_error) {
 	    die("连接失败: " . $conn->connect_error);
 	} 
+	// // 查询数据
+	// $sql = 'select * from user';
+	// // 查询数据库获取数据
+	// $result = $conn->query($sql);
+	// //使用查询结果集
+	// $row = $result->fetch_all(MYSQLI_ASSOC);
+	// for($i=0;$i<count($row);$i++){
+	// 	if($row[$i]['username']==$name){
+			
+	// 	}
+	// };
 	
 
 	if($name!=''&&$pasw!=''){
@@ -27,6 +38,7 @@
 		    echo "Error: " . $sql . "<br>" . $conn->error;
 		}
 	}
+	
 
 	
 ?>
